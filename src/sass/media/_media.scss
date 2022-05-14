@@ -12,6 +12,19 @@
     }
 }
 
+.carousel {
+    &__inner {
+        width: 600px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.slick_dots {
+    display: flex;
+}
+
 @media (max-width: 767px) {
     .header {
         &__official {
