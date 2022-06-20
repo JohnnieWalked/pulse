@@ -1,0 +1,155 @@
+@media (max-width: 991px) {
+    .container {
+        padding: 0 21px 0 21px;
+    }
+    .promo {
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 700px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+    }
+
+}
+
+
+
+/* ------767px--------------------------------------------------------------------------------------- */
+
+@media (max-width: 767px) { 
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+        &__icons {
+            width: 370px;
+        }
+    }
+    .benefits {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__items {
+            margin-bottom: 35px;
+            width: 330px;
+        }
+    }
+    .title_left {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+
+    .carousel {
+        &__inner {
+            width: 90%;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 15px;
+        }
+        &__tab:nth-child(1) {
+            align-self: flex-start;
+        }
+        &__tab:last-child {
+            margin-bottom: 0px;
+            align-self: flex-end;
+        }
+    }
+
+    .reviews {
+        &_block {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+
+            &_photo {
+                margin: 0;
+            }
+
+            &_feedback {
+                .nickname {
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                .amount_maraph {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+/* ------------------------------------------------------------------------------------------ */
+
+@media (max-width: 575px) {
+    .header {
+        &__logo {
+            width: 150px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+
+    .promo {
+        &__wrapper {
+            align-items: center;
+            text-align: center;
+        }
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__icons {
+            width: 100%;
+        }
+    }
+    .benefits {
+        &__items {
+            margin-bottom: 35px;
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .feed-form {
+        width: 100%;
+        .button {
+            width: 100%;
+        }
+    }
+}

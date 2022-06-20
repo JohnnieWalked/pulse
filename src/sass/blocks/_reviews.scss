@@ -1,0 +1,38 @@
+.reviews {
+    padding-bottom: 50px;
+
+    &_block {
+        margin-top: 60px;
+        display: flex;
+        align-items: flex-start;
+
+        &_photo {
+            margin-right: 60px;
+        }
+
+        &_feedback {
+            .nickname {
+                display: block;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color: $black;
+            }
+
+            .amount_maraph {
+                margin-bottom: 10px;
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: $gray;
+            }
+            .text {
+                font-size: 16px;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.benefits {
+    padding: 70px 0 65px;
+    background-color: $light-gray;
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__items {
+        width: 259px;
+    }
+    &__title {
+        margin-top: 35px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        a {
+            color: $main-color;
+        }
+    }
+}
