@@ -3,7 +3,11 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 700,
+<<<<<<< HEAD
         adaptiveHeight: false,
+=======
+        adaptiveHeight: true,
+>>>>>>> 4811025857fdafd1619c346d4bcb0aa1f189cf11
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
         responsive: [
