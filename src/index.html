@@ -26,7 +26,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+384999228974" class="header__phone">+38 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
 
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -90,10 +90,10 @@
             <div class="consultation__descr">
                 Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -158,7 +158,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches_example.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Sintic FT1</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -185,7 +185,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches_example.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Suuno M23</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -212,7 +212,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches_example.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Monica TT4</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -378,17 +378,12 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-            </div> <!-- catalog-content -->
-=======
             </div> <!-- catalog_-content -->
->>>>>>> 4811025857fdafd1619c346d4bcb0aa1f189cf11
 
 
         </div> <!-- container -->
     </section>
 
-<<<<<<< HEAD
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
@@ -426,14 +421,67 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937577!2d2.2922926160587735!3d48.858370079287496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z0JXQudGE0LXQu9C10LLQsCDQktC10LbQsA!5e0!3m2!1suk!2sua!4v1655722011582!5m2!1suk!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="footer__info">
+            <address class="footer__addr">Champ de Mars, 5 Av. Anatole France, 75007 Paris, Франція</address>
+            <a class="footer__phone" href="#">+380 943 41 54</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
+            </div>
+        </div>
+    </footer>
 
-=======
->>>>>>> 4811025857fdafd1619c346d4bcb0aa1f189cf11
+
+    <!-- Modal windows ----------------------------------------------------------------------------------------------------->
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__header">Просто заполните форму заявки</div>
+            <div class="modal__subheader">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__header">Ваш заказ:</div>
+            <div class="modal__subheader">Пульсометр</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__header">Спасибо за вашу заявку!</div>
+            <div class="modal__subheader">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div> <!-- modal -->
+
+
+
 
     <script defer src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script defer src="js/slick.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/jquery.maskedinput.min.js"></script>
     <script defer src="js/script.js"></script>
+    <script defer src="js/modal.js"></script>
     
 </body>
 </html>

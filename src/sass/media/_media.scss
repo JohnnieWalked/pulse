@@ -10,7 +10,6 @@
             font-size: 22px;
         }
     }
-<<<<<<< HEAD
     .carousel {
         &__inner {
             width: 700px;
@@ -22,7 +21,7 @@
     
     .catalog {
         &__content {
-            justify-content: center;
+            justify-content: space-evenly;
         }
     }
 
@@ -33,24 +32,6 @@
 /* ------767px--------------------------------------------------------------------------------------- */
 
 @media (max-width: 767px) { 
-=======
-}
-
-.carousel {
-    &__inner {
-        width: 600px;
-        img {
-            width: 100%;
-        }
-    }
-}
-
-.slick_dots {
-    display: flex;
-}
-
-@media (max-width: 767px) {
->>>>>>> 4811025857fdafd1619c346d4bcb0aa1f189cf11
     .header {
         &__official {
             display: none;
@@ -81,8 +62,6 @@
         font-size: 30px;
         line-height: 45px;
     }
-<<<<<<< HEAD
-
 
     .carousel {
         &__inner {
@@ -129,11 +108,34 @@
         }
     }
 
+    .footer {
+        &__info {
+            width: 260px;
+        }
+        &__addr {
+            font-size: 15px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        &__social {
+            width: 150px;
+        }
+        &__social-item {
+            width: 35px;
+            height: 35px;
+            img {
+                height: 18px;
+            }
+        }
+    }
+    
+
+
+
+
 }
 /* ------------------------------------------------------------------------------------------ */
-=======
-}
->>>>>>> 4811025857fdafd1619c346d4bcb0aa1f189cf11
 
 @media (max-width: 575px) {
     .header {
@@ -173,6 +175,18 @@
         width: 100%;
         .button {
             width: 100%;
+        }
+    }
+    .modal {
+        max-width: 300px;
+        &__header {
+            font-size: 16px;
+        }
+        &__subheader {
+            font-size: 14px;
+        }
+        button {
+            font-size: 14px;
         }
     }
 }
